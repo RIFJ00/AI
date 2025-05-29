@@ -257,7 +257,7 @@
         .policy-header {
             display: flex;
             align-items: center;
-            justify-content: between;
+            justify-content: space-between;
             margin-bottom: 0.75rem;
         }
         
@@ -282,6 +282,20 @@
         
         .policy-content.expanded {
             display: block;
+        }
+        
+        .policy-arrow {
+            color: #6b7280;
+            font-size: 1rem;
+            transition: transform 0.2s ease;
+        }
+        
+        .policy-card:hover .policy-arrow {
+            color: #2563eb;
+        }
+        
+        .policy-content.expanded + .policy-header .policy-arrow {
+            transform: rotate(180deg);
         }
         
         .org-chart {
@@ -822,7 +836,7 @@
                                         <div class="policy-icon">🔬</div>
                                         <h3>研究開発の推進</h3>
                                     </div>
-                                    <span style="color: #6b7280;">▼</span>
+                                    <span class="policy-arrow">▼</span>
                                 </div>
                                 <div id="research-content" class="policy-content">
                                     基礎研究から実用化まで一貫した研究開発の推進、研究開発機関における成果移転体制の整備、成果に係る情報の提供など。
@@ -835,7 +849,7 @@
                                         <div class="policy-icon">🏗️</div>
                                         <h3>施設・設備等の整備</h3>
                                     </div>
-                                    <span style="color: #6b7280;">▼</span>
+                                    <span class="policy-arrow">▼</span>
                                 </div>
                                 <div id="facilities-content" class="policy-content">
                                     大規模情報処理施設、情報通信インフラ、データセット等の知的基盤、共用利用の促進。
@@ -848,7 +862,7 @@
                                         <div class="policy-icon">🛡️</div>
                                         <h3>適正性の確保</h3>
                                     </div>
-                                    <span style="color: #6b7280;">▼</span>
+                                    <span class="policy-arrow">▼</span>
                                 </div>
                                 <div id="compliance-content" class="policy-content">
                                     国際的規範に即した指針整備、適正な実施のための施策。
@@ -861,7 +875,7 @@
                                         <div class="policy-icon">🎓</div>
                                         <h3>人材の確保</h3>
                                     </div>
-                                    <span style="color: #6b7280;">▼</span>
+                                    <span class="policy-arrow">▼</span>
                                 </div>
                                 <div id="talent-content" class="policy-content">
                                     専門的かつ幅広い知識を持つ人材、多様な分野の人材育成、資質向上の施策。
@@ -874,7 +888,7 @@
                                         <div class="policy-icon">📚</div>
                                         <h3>教育の振興</h3>
                                     </div>
-                                    <span style="color: #6b7280;">▼</span>
+                                    <span class="policy-arrow">▼</span>
                                 </div>
                                 <div id="education-content" class="policy-content">
                                     AI技術への理解促進、関連教育・学習の振興、広報活動の充実。
@@ -887,7 +901,7 @@
                                         <div class="policy-icon">🔍</div>
                                         <h3>調査研究</h3>
                                     </div>
-                                    <span style="color: #6b7280;">▼</span>
+                                    <span class="policy-arrow">▼</span>
                                 </div>
                                 <div id="research-study-content" class="policy-content">
                                     国内外動向の情報収集、不適切利用事案の分析・対策検討、研究開発機関への指導・助言。
@@ -900,7 +914,7 @@
                                         <div class="policy-icon">🌐</div>
                                         <h3>国際協力</h3>
                                     </div>
-                                    <span style="color: #6b7280;">▼</span>
+                                    <span class="policy-arrow">▼</span>
                                 </div>
                                 <div id="international-content" class="policy-content">
                                     国際協力の推進、国際的規範策定への積極的参画。
@@ -1050,7 +1064,7 @@
                             </div>
                             
                             <div class="highlight-box" style="margin-top: 2rem;">
-                                <p><strong>注目:</strong> 日本の投資額は米国の約3%、中国の約26%に留まっており、大幅な遅れが明確です。</p>
+                                <p><strong>注目:</strong> 日本の投資額は米国の約3%、中国の約26%に留まっており、大幅な遅れが明確である。</p>
                             </div>
                         </div>
 
@@ -1130,7 +1144,7 @@
                 </div>
             </div>
 
-            <!-- 法案条文タブ -->
+            <!-- 法律条文タブ -->
             <div id="bill" class="content-section">
                 <div class="content-wrapper">
                     <div class="tab-header">
